@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическое задание 6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <section class="heading">
+            <div class="wrapper">
+                <div class="flex-blocks__heading">
+                    <div class="logo__heading">
+                        <img src="img/logo_v2.png" alt="logo">
+                    </div>
+                    <nav>
+                        <ul class="menu">
+                            <!-- (li>a)*4 -->
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">Магазин</a></li>
+                            <li><a href="#">О&nbsp;нас</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="shop-basket">
+                        <img src="img/basket-buy.svg" alt="busket-buy">
+                        <span class="value__shop-basket" id="valueShopBasket">0</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="products">
+            <div class="wrapper">
+                <div class="flex-blocks__products">
+                    <!-- (.flex-item__products>img+h3{Пицца колбасная}+p+a{В корзину})*3 -->
+                    <div class="flex-item__products">
+                        <img src="img/Колбасная.jpg" id="img1" alt="Колбасная">
+                        <h3>Пицца&nbsp;колбасная</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, accusamus?</p>
+                        <div class="in-basket-minus-plus">
+                            <div id="in-basket1-div">
+                                <a href="#img1" class="in-buy-basket" id="in-basket1">В корзину</a>
+                            </div>
+                            <div class="blocks-minus-plus" id="pizza1">
+                                <div class="item-minus-plus">
+                                    <button type="button" class="buy-minus-btn" id="minus1">
+                                        <span class="buy-minus-span">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                class="minus">
+                                                <path fill="currentColor" d="M5 11a1 1 0 1 0 0 2h14a1 1 0 1 0 0-2H5Z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                                <span class="item-minus-plus"><span id="value-item-count1">0</span> шт.</span>
+                                <div class="item-minus-plus">
+                                    <button type="button" class="buy-plus-btn" id="plus1">
+                                        <span class="buy-plus-span">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="plus">
+                                                <path fill="currentColor"
+                                                    d="M12 4a1 1 0 0 0-1 1v6H5a1 1 0 1 0 0 2h6v6a1 1 0 1 0 2 0v-6h6a1 1 0 1 0 0-2h-6V5a1 1 0 0 0-1-1Z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-item__products">
+                        <img src="img/Ветчинная.jpg" id="img2" alt="Ветчинная">
+                        <h3>Пицца&nbsp;ветчинная</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, accusamus?</p>
+                        <div id="in-basket2-div">
+                            <a href="#img2" class="in-buy-basket" id="in-basket2">В корзину</a>
+                        </div>
+                        <div class="blocks-minus-plus" id="pizza2">
+                            <div class="item-minus-plus">
+                                <button type="button" class="buy-minus-btn" id="minus2">
+                                    <span class="buy-minus-span">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="minus">
+                                            <path fill="currentColor" d="M5 11a1 1 0 1 0 0 2h14a1 1 0 1 0 0-2H5Z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                            <span class="item-minus-plus"><span id="value-item-count2">0</span> шт.</span>
+                            <div class="item-minus-plus">
+                                <button type="button" class="buy-plus-btn" id="plus2">
+                                    <span class="buy-plus-span">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="plus">
+                                            <path fill="currentColor"
+                                                d="M12 4a1 1 0 0 0-1 1v6H5a1 1 0 1 0 0 2h6v6a1 1 0 1 0 2 0v-6h6a1 1 0 1 0 0-2h-6V5a1 1 0 0 0-1-1Z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-item__products">
+                        <img src="img/Сытная.jpg" id="img3" alt="Сытная">
+                        <h3>Пицца&nbsp;сытная</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, accusamus?</p>
+                        <div id="in-basket3-div">
+                            <a href="#img3" class="in-buy-basket" id="in-basket3">В корзину</a>
+                        </div>
+                        <div class="blocks-minus-plus" id="pizza3">
+                            <div class="item-minus-plus">
+                                <button type="button" class="buy-minus-btn" id="minus3">
+                                    <span class="buy-minus-span">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="minus">
+                                            <path fill="currentColor" d="M5 11a1 1 0 1 0 0 2h14a1 1 0 1 0 0-2H5Z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                            <span class="item-minus-plus"><span id="value-item-count3">0</span> шт.</span>
+                            <div class="item-minus-plus">
+                                <button type="button" class="buy-plus-btn" id="plus3">
+                                    <span class="buy-plus-span">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="plus">
+                                            <path fill="currentColor"
+                                                d="M12 4a1 1 0 0 0-1 1v6H5a1 1 0 1 0 0 2h6v6a1 1 0 1 0 2 0v-6h6a1 1 0 1 0 0-2h-6V5a1 1 0 0 0-1-1Z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
